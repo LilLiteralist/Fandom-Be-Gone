@@ -1,0 +1,306 @@
+.global-navigation,
+.wds-dropdown__content,
+[class^="NotificationsContent-module_contentHeader__"],
+[class^="NotificationsContent-module_scrollableListWrapper__"],
+[class^="NotificationCard-module_card__"] {
+	background-color: var(--theme-page-background-color--secondary) !important;
+    border-bottom-color: var(--theme-border-color) !important;
+	/*box-shadow: none;*/
+}
+[class*="NotificationCard-module_isUnread"] {
+    filter:brightness(125%)!important;
+}
+[class^="NotificationsContent-module_markAllAsRead__"] {
+    color:var(--theme-link-color) !important;
+}
+[class^="NotificationCard-module_unreadStatusDot__"] {
+    background-color: var(--theme-accent-color) !important;
+    border-color: var(--theme-accent-color) !important;
+    border-radius:20px !important;
+    width:70px !important;
+    height:1.4em !important;
+}
+[class*="NotificationCard-module_isUnread__"] [class*="NotificationCard-module_unreadStatusDot"]:hover {
+    background-color: var(--theme-accent-color--hover) !important;
+    border-color: var(--theme-accent-color) !important;
+}
+[class^="NotificationCard-module_unreadStatusDot__"]::after {
+    content:"Mark Read";
+    color:var(--theme-accent-label-color);
+    margin-left:4px; 
+}
+[class^="NotificationCard-module_avatarIcon__"] {
+    background-color: var(--theme-accent-color) !important;
+}
+.wds-avatar img.wds-avatar__image {
+    color: var(--theme-link-color) !important;
+}
+.wds-avatar img.wds-avatar__image:hover {
+    color: var(--theme-link-color--hover) !important;
+}
+[class^="NotificationCard-module_side__"] .wds-avatar:hover [class^="NotificationCard-module_avatarIcon__"], 
+[class^="NotificationCard-module_side__"] .wds-avatar:hover img.wds-avatar__image {
+    border-color: var(--theme-link-color) !important;
+    color: var(--theme-link-color) !important;
+}
+.wds-icon.wds-icon-tiny {
+    fill: var(--theme-accent-label-color);
+}
+div.wds-avatar:hover .wds-icon.wds-icon-tiny {
+    fill: var(--theme-link-color);
+}
+[data-tracking-label="notification-click-marketing-notification"] div[class^="NotificationCard-module_message__"] {
+    display:none;
+}
+.community-header-wrapper {
+    height:125px;
+}
+.fandom-sticky-header {
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s,-webkit-transform .2s;
+}
+.global-navigation__search svg,
+.notifications__toggle svg {
+	fill: var(--theme-link-color) !important;
+}
+.global-navigation__search svg:hover, 
+.notifications__toggle svg:hover {
+    fill: var(--theme-link-color--hover) !important;
+}
+.global-navigation__icon:active, 
+.global-navigation__icon:focus, 
+.global-navigation__link:active .global-navigation__icon, 
+.global-navigation__link:focus .global-navigation__icon, 
+.wds-dropdown.wds-is-active .global-navigation__icon {
+    background-color: var(--theme-page-background-color--secondary);
+    filter: brightness(90%);
+}
+.fandom-sticky-header.is-visible {
+    margin-top: -1px;
+}
+#WikiaBar,
+#SurveyModule,
+#mixed-content-footer,
+#highlight__main-container,
+[class^="page-footer__"],
+.global-navigation__logo,
+.global-navigation__links,
+.wiki-tools__theme-switch,
+.wds-global-footer__main,
+.wds-global-footer__bottom-bar-row.wds-has-padding,
+.mcf-wrapper,
+.notifications-placeholder,
+.global-footer,
+.top-ads-container,
+.bottom-ads-container,
+.gpt-ad,
+#top_boxad,
+#rail-boxad-wrapper,
+.reviews,
+.unified-search__layout__right-rail,
+.page-side-tool.content-size-toggle,
+.license-description,
+.ve-ui-summaryPanel-copyrightWarningFooter,
+.wiki-recent-changes,
+.community-info__wiki-link,
+.community-info__expand {
+	display: none!important;
+}
+.fandom-sticky-header {
+	box-shadow: none;
+}
+.global-navigation__bottom,
+.global-navigation__top {
+	background-color: transparent;
+	box-shadow: none;
+}
+.CommentList_empty-state__Cx7nB {
+    padding:0px;
+}
+.global-navigation__icon,
+.global-navigation__icon:active,
+.global-navigation__icon:focus,
+.global-navigation__icon:hover,
+.global-navigation__icon:visited {
+	color: var(--theme-link-color) !important;
+	border: none
+}
+.global-navigation .notifications__counter {
+    background:var(--theme-page-dynamic-color-1);
+    color: var(--theme-accent-color);
+}
+.wds-dropdown__content {
+	background-color: var(--theme-page-background-color--secondary);
+	border: 1px solid var(--theme-border-color);
+	color: var(--theme-page-text-color);
+}
+.wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::after,
+.wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::before {
+	background-color: var(--theme-page-background-color--secondary);
+}
+.wds-dropdown.wds-open-to-right::before,
+.wds-dropdown.wds-open-to-right::after {
+	border-right-color: var(--theme-page-background-color--secondary);
+}
+.wds-dropdown__content .wds-list.wds-is-linked > li.wds-is-selected > a:not(.wds-button),
+.wds-dropdown__content .wds-list.wds-is-linked > li:hover > a:not(.wds-button),
+.global-navigation__signout-button:hover {
+	background-color: rgba(var(--theme-link-color--rgb), 0.1);
+	color: var(--theme-link-color)
+}
+.global-navigation__icon:hover,
+.global-navigation__link:hover .global-navigation__icon,
+.wds-dropdown:hover .global-navigation__icon {
+	background-color: rgba(var(--theme-link-color--rgb), 0.1);
+	border-color: var(--theme-link-color)
+}
+[class^="NotificationsContent-module_scrollableListWrapper__"] .fandom-spinner > svg circle {
+    stroke:var(--theme-link-color);
+}
+.search-modal__content {
+	background-color: var(--theme-page-background-color--secondary);
+	border: 1px solid var(--theme-border-color);
+}
+[class^="SearchInput-module_form__"] .wds-button {
+	--wds-primary-button-background-color: var(--theme-accent-color);
+	--wds-primary-button-background-color--hover: var(--theme-accent-color--hover);
+	--wds-primary-button-label-color: var(--theme-page-text-color);
+}
+[class^="SearchInput-module_form__"] {
+	border-bottom: 2px solid var(--theme-accent-color);
+}
+.page-content .unified-search__layout {
+	grid-template-areas: "left left left main main main main main main main main main" !important;
+	grid-template-columns: initial;
+}
+div.mw-warning-with-logexcerpt {
+	border: 1px solid var(--theme-border-color);
+	padding: 10px 15px;
+	background: var(--theme-page-background-color--secondary);
+	border-radius: 6px;
+}
+.search-modal::before {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.highlight__wiki-btn .tag-button__title {
+	max-width: 337px !important;
+	overflow: hidden;
+	text-overflow: clip;
+	white-space: nowrap;
+}
+.top-results__item {
+	margin-bottom: 5px;
+}
+.top-results__link {
+	color: var(--theme-link-color)
+}
+.top-results__link {
+	max-width: 100%!important;
+	padding: 8px 12px;
+	transition: 0.1s
+}
+.top-results__link:hover {
+	background: rgba(var(--theme-link-color--rgb), 0.1);
+	color: var(--theme-page-text-color);
+	text-decoration: none!important;
+	transition: 0.1s
+}
+.mw-body-content .unified-search.is-new-ui .unified-search__result:not(.marketplace) .unified-search__result__thumbnail {
+	background-color: rgba(var(--theme-accent-color--rgb), .3);
+	border-right: 0;
+	border-radius: 10px;
+}
+.mw-body-content .unified-search.is-new-ui .unified-search__result:not(.marketplace) .unified-search__result__thumbnail img {
+	border-radius: 10px;
+}
+.global-navigation .wds-button {
+	--wds-primary-button-background-color: var(--theme-accent-color);
+	--wds-primary-button-background-color--hover: var(--theme-accent-color--hover);
+	--wds-primary-button-label-color: var(--theme-accent-label-color);
+	--wds-secondary-button-label-color: var(--theme-page-text-color);
+	--wds-secondary-button-label-color--hover: var(--theme-page-text-color--hover);
+}
+.SearchResults-module_results__k8itn.wds-list.wds-is-linked > li > a[class^="SearchResults-module_seeAllResults__"] {
+	color: var(--theme-link-color);
+	transition: 0.1s ease
+}
+.SearchResults-module_results__k8itn.wds-list.wds-is-linked > li > a[class*="SearchResults-module_isSelected__"],
+.SearchResults-module_results__k8itn.wds-list.wds-is-linked > li > a:hover {
+	background-color: rgba(var(--theme-link-color--rgb), .1);
+	text-decoration: none;
+}
+.mw-body-content .unified-search.is-new-ui .unified-search__result:not(.marketplace) .unified-search__result__thumbnail .unified-search__result__thumbnail-icon {
+	bottom: 5px;
+	right: 5px;
+}
+.wiki-tools .wds-button.wds-is-secondary:nth-of-type(3) {
+	border-radius: 3px 0 0 3px;
+}
+.SearchInput-module_form__fAwdT .wds-button[type="button"] {
+	--wds-text-button-label-color: var(--theme-page-text-color);
+	--wds-text-button-label-color--hover: var(--theme-page-text-color--hover);
+}
+.wiki-recent-changes__item a.no-image {
+    background-color: var(--theme-page-background-color--secondary);
+}
+.no-image svg > path {
+    display:none;
+}
+.post__og-image-container .post__og-image {
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+.post__og-data-wrapper {
+    height: 80px;
+}
+.post__og-image-container {
+    flex: 1;
+}
+.post__og-details {
+    justify-content: initial;
+}
+.skin-fandomdesktop .ve-init-mw-desktopArticleTarget-originalContent:not(:empty) {
+    --summary-panel-height: 105px;
+}
+.community-info__content {
+    height:228px;
+    
+}
+.standard-post {
+    cursor: pointer;
+}
+.pill,
+.pill.is-active,
+.feed-filters .view-filter__toggle.wds-button.wds-is-text, 
+.feed-filters .view-filter__toggle.wds-button.wds-is-text:active,
+.feed-filters .view-filter__toggle.wds-button.wds-is-text:hover {
+    color: var(--theme-sticky-nav-text-color);
+    background-color: var(--theme-page-accent-mix-color);
+    border: 1px solid currentcolor;
+    border-radius: 25px;
+    transition: background-color .15s;
+}
+.pill.is-active {
+    background-color: var(--theme-accent-color);
+}
+.pill:hover,
+.feed-filters .view-filter__toggle.wds-button.wds-is-text:hover {
+    background-color: var(--theme-accent-color--hover);
+}
+.view-filter__toggle.wds-button.wds-is-text {
+    padding-right: 10px;
+}
+.wds-avatar__badge[title="Thread Moderator"] svg path,
+symbol[id="wds-avatar-badges-discussion-moderator"] path {
+    fill: var(--theme-page-accent-mix-color);
+}
+.wds-avatar__badge[title="Thread Moderator"] svg path + path,
+symbol[id="wds-avatar-badges-discussion-moderator"] path + path{
+    fill: #fff;
+}
+.wds-fandom-content-well .layout-header h1,
+.wds-fandom-content-well .layout-header {
+    color:var(--theme-community-header-color);
+}
