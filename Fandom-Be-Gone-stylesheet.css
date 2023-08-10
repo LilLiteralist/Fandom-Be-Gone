@@ -101,7 +101,7 @@ div.wds-avatar:hover .wds-icon.wds-icon-tiny {
 .reviews,
 .unified-search__layout__right-rail,
 .page-side-tool.content-size-toggle,
- ul[class*="NotificationsContent-module_tabber__"].wds-tabber,
+ul[class*="NotificationsContent-module_tabber__"].wds-tabber,
 .license-description,
 .ve-ui-summaryPanel-copyrightWarningFooter,
 .wiki-recent-changes,
@@ -163,6 +163,9 @@ div.wds-avatar:hover .wds-icon.wds-icon-tiny {
 .search-modal__content {
 	background-color: var(--theme-page-background-color--secondary);
 	border: 1px solid var(--theme-border-color);
+}
+.SearchResults-module_isSelected__7oTZQ {
+    border-color:var(--theme-link-color)!important;
 }
 [class^="SearchInput-module_form__"] .wds-button {
 	--wds-primary-button-background-color: var(--theme-accent-color);
@@ -304,4 +307,40 @@ symbol[id="wds-avatar-badges-discussion-moderator"] path + path{
 .wds-fandom-content-well .layout-header h1,
 .wds-fandom-content-well .layout-header {
     color:var(--theme-community-header-color);
+}
+
+/*Mobile stuff below here*/
+.mobile-global-navigation__logo,
+.mobile-global-navigation__logomark,
+.mobile-global-navigation__left,
+.beta-stars,
+a[href="https://fandom.com/fancentral"],
+.mobile-search-modal__links,
+.recirculation-prefooter,
+#fandom-mobile-wrapper [class^="CommentList_empty-state-message__"],
+.mobile-main-page__trending-articles,
+.mobile-main-page__popular-categories {
+    display:none !important;
+}
+.mobile-global-navigation,
+.mobile-global-navigation__right {
+    background-color:var(--theme-sticky-nav-background-color);
+}
+.mobile-global-navigation .wds-button.wds-is-text {
+    color:var(--theme-link-color);
+}
+.mobile-global-navigation__modal {
+    background:var(--theme-body-dynamic-color-2);
+}
+[class^="NotificationsContent-module_title__"] {
+    padding-left: 5%;
+}
+.oo-ui-toggleSwitchWidget-grip {
+    background-color:var(--theme-page-background-color--secondary);
+}
+.mobile-main-page__popular-categories+.collapsible-section {
+    display:none;
+}
+.mobile-main-page section.mobile-hidden {
+    display:block;
 }
