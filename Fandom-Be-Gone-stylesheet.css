@@ -344,3 +344,11 @@ a[href="https://fandom.com/fancentral"],
 .mobile-main-page section.mobile-hidden {
     display:block;
 }
+.mobile-search-modal__content .wds-button {
+    background-color:var(--theme-accent-color);
+    border-color:var(--theme-accent-color);
+    color:var(--theme-page-text-color);
+}
+.mobile-search-modal__content [class^="SearchInput-module_form__"] {
+    border-bottom: 2px solid var(--theme-accent-color)
+}
