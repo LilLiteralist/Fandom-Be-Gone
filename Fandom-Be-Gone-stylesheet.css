@@ -101,7 +101,7 @@ div.wds-avatar:hover .wds-icon.wds-icon-tiny {
 .reviews,
 .unified-search__layout__right-rail,
 .page-side-tool.content-size-toggle,
-ul[class*="NotificationsContent-module_tabber__"].wds-tabber,
+[class*="NotificationsContent-module_tabber__"].wds-tabber .wds-tabs__wrapper,
 .license-description,
 .ve-ui-summaryPanel-copyrightWarningFooter,
 .wiki-recent-changes,
