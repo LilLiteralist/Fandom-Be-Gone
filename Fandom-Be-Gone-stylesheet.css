@@ -1,3 +1,13 @@
+/*If you have an account and are logged in, you can go to https://swse.fandom.com/wiki/Special:Preferences#mw-prefsection-rendering and click on Custom CSS. 
+Edit that page, and copy/paste this code (Ignore the warnings that there are errors.) 
+Once you've done that, follow the instructions on the page for your browser. 
+If you do it this way, the changes will also show when you are logged in with a mobile device.
+
+Alternatively, you can use a stylesheet extension like Stylus or Cascadea and apply the code to all fandom.com sites. 
+That way, it will apply when you are not logged in, and on more fandom sites than just the SWSE wiki. 
+(I used color variables which should adjust to the theme of any fandom site, though there may be a few variables which aren't shared.) 
+*/
+
 .global-navigation,
 .wds-dropdown__content,
 [class^="NotificationsContent-module_contentHeader__"],
