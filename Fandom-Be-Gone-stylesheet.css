@@ -116,7 +116,9 @@ div.wds-avatar:hover .wds-icon.wds-icon-tiny {
 .ve-ui-summaryPanel-copyrightWarningFooter,
 .wiki-recent-changes,
 .community-info__wiki-link,
-.community-info__expand {
+.community-info__expand,
+.category-page__trending-pages,
+.category-page__trending-pages-header {
 	display: none!important;
 }
 .fandom-sticky-header {
@@ -361,4 +363,7 @@ a[href="https://fandom.com/fancentral"],
 }
 .mobile-search-modal__content [class^="SearchInput-module_form__"] {
     border-bottom: 2px solid var(--theme-accent-color)
+}
+#delete {
+    background-color:#f08!important;
 }
