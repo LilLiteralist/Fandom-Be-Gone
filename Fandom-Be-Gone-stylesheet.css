@@ -367,3 +367,12 @@ a[href="https://fandom.com/fancentral"],
 #delete {
     background-color:#f08!important;
 }
+.wds-text-card {
+    background-color:var(--theme-body-dynamic-color-2);
+}
+.wds-text-card .wds-text-card__title {
+    color:inherit;
+}
+.wds-text-card .wds-text-card__title--link:hover {
+    color:var(--theme-link-color--hover);
+}
