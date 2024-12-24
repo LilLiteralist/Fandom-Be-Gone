@@ -7,6 +7,47 @@ Alternatively, you can use a stylesheet extension like Stylus or Cascadea and ap
 That way, it will apply when you are not logged in, and on more fandom sites than just the SWSE wiki. 
 (I used color variables which should adjust to the theme of any fandom site, though there may be a few variables which aren't shared.) 
 */
+/* Begin fixes for 20th anniversary layout */
+    #global-explore-navigation,
+    .community-navigation__fandom-heart,
+    #global-top-navigation a.global-top-navigation__fandom-logo,
+    .global-top-navigation__start-new-wiki {
+        display:none;
+    }
+    .community-navigation.fandom-sticky-header {
+        transform: translateY(100%);
+    }
+    .main-container {
+        margin-left:0px;
+        width:100%;
+    }
+    .fandom-community-header__background.fullScreen {
+        width: 100%;
+    }
+    .global-top-navigation {
+        --fandom-top-nav-icon-color--hover: var(--theme-global-nav-link-color);
+        --fandom-top-nav-icon-color: var(--theme-accent-color);
+        background-color: var(--theme-accent-color);
+    }
+    .wds-avatar.wds-avatar--square:hover::after,
+    .global-action__item.global-action__user.wds-is-active,
+    .wds-dropdown.wds-is-not-hoverable.wds-is-active,
+    .notifications.global-action__item.global-action-notifications.wds-is-active {
+        --fandom-secondary-color--hover:var(--theme-accent-color--hover);
+    }
+    .wds-avatar.wds-avatar--square {
+        --fandom-accent-color: var(--theme-accent-dynamic-color-1);
+    }
+    [class^="Tab-module_tab__"].navigation-tab {
+        background-color: var(--theme-page-background-color--secondary)!important;;
+        border-top: 1px solid var(--theme-border-color);
+    }
+    .global-action__icon .notifications__counter,
+    .global-action__item.wds-is-active .notifications__counter {
+        background: var(--theme-page-dynamic-color-1);
+        color: var(--theme-accent-color);
+    }
+    /* End fixes for 20th anniversary layout */
 
 .global-navigation,
 .wds-dropdown__content,
